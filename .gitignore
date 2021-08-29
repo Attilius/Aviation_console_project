@@ -2,6 +2,7 @@
 Debug/
 0
 Aviation_project/Debug/
+Aviation_project/.vs/
 *.vcxproj
 *.filters
 *.user
