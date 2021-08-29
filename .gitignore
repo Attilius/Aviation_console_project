@@ -1,0 +1,7 @@
+*.sln
+Debug/
+0
+Aviation_project/Debug/
+*.vcxproj
+*.filters
+*.user
