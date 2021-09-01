@@ -1,4 +1,6 @@
 #include <iostream>
+#include "FlightInformations.h"
+#include "Time.h"
 
 using std::string;
 using std::cin;
