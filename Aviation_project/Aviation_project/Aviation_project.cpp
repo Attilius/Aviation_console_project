@@ -1,6 +1,7 @@
 #include <iostream>
 #include "FlightInformations.h"
 #include "Time.h"
+#include "Menu.h"
 
 using std::string;
 using std::cin;
@@ -40,16 +41,7 @@ int main()
 	do
 	{
 		system("cls");
-		cout << "Please choose a location:" << endl;
-		cout << " " << endl;
-		cout << "=> 1. Budapest" << endl;
-		cout << "=> 2. London" << endl;
-		cout << "=> 3. Paris" << endl;
-		cout << "=> 4. Munich" << endl;
-		cout << "=> 5. New_York" << endl;
-		cout << "=> 6. Quit" << endl;
-		cout << " " << endl;
-		cout << "Select: ";
+		setLocation();
 		cin >> selected;
 
 		switch (selected)
