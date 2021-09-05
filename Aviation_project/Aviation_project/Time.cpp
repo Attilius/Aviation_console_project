@@ -27,14 +27,10 @@ int Time::getMinute() {
 string Time::getLondonTime(int Hour, int Minute) {
     string hour = to_string(Hour - 1);
     string minute = to_string(Minute);
-    if ((Hour - 1) < 10)
-    {
-        hour = "0" + to_string(Hour - 1);
-    }
-    if (Minute < 10)
-    {
-        minute = "0" + to_string(Minute);
-    }
+
+    if ((Hour - 1) < 10) hour = "0" + to_string(Hour - 1);
+
+    if (Minute < 10) minute = "0" + to_string(Minute);
 
     return hour + ":" + minute;
 }
@@ -42,14 +38,10 @@ string Time::getLondonTime(int Hour, int Minute) {
 string Time::getNewYorkTime(int Hour, int Minute) {
     string hour = to_string(Hour - 6);
     string minute = to_string(Minute);
-    if ((Hour - 6) < 10)
-    {
-        hour = "0" + to_string(Hour - 6);
-    }
-    if (Minute < 10)
-    {
-        minute = "0" + to_string(Minute);
-    }
+
+    if ((Hour - 6) < 10) hour = "0" + to_string(Hour - 6);
+
+    if (Minute < 10) minute = "0" + to_string(Minute);
 
     return hour + ":" + minute;
 }
