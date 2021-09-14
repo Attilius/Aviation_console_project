@@ -7,7 +7,7 @@ namespace error
 	void View::showErrorMessage(int errorCode, string errorMessage)
 	{
 		cout << " _______________________________________________ " << endl;
-		cout << "|						|						  " << endl;
+		cout << "|						|" << endl;
 		cout << "|   d88888b  d8888b. d8888b.  .d88b.  d8888b.   |" << endl;
 		cout << "|   88'      88  `8D 88  `8D .8P  Y8. 88  `8D   |" << endl;
 		cout << "|   w88ooooo 88oobY' 88oobY' 88    88 88oobY'   |" << endl;
