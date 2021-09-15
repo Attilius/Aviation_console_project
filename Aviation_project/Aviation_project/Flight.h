@@ -10,7 +10,7 @@ using std::left;
 using std::right;
 using std::endl;
 
-class FlightInformations
+class Flight
 {
 private:
     string Carrier;
@@ -19,7 +19,7 @@ private:
     string Time;
     string Remarks = " ";
 public:
-    FlightInformations(string carrier, string flightNumber, string destination, string time);
+    Flight(string carrier, string flightNumber, string destination, string time);
 
     void showFlight();
 
