@@ -27,3 +27,11 @@ namespace Confirmation
 		void confirmationMessage(string confirmationMsg);
 	};
 }
+namespace Location
+{
+	class View
+	{
+	public:
+		void showLocation(string location);
+	};
+}
