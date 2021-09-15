@@ -1,14 +1,14 @@
-#include "FlightInformations.h"
+#include "Flight.h"
 
 
-FlightInformations::FlightInformations(string carrier, string flightNumber, string destination, string time) {
+Flight::Flight(string carrier, string flightNumber, string destination, string time) {
     this->Carrier = carrier;
     this->FlightNumber = flightNumber;
     this->Destination = destination;
     this->Time = time;
 }
 
-void FlightInformations::showFlight() {
+void Flight::showFlight() {
     cout << left << setw(3);
     cout << this->Carrier;
     cout << left << setw(11);
@@ -22,22 +22,22 @@ void FlightInformations::showFlight() {
     cout << left << setw(11) << endl;
 }
 
-void FlightInformations::setRemarks(string status) {
+void Flight::setRemarks(string status) {
     this->Remarks = status;
 }
 
-string FlightInformations::getCarrier() {
+string Flight::getCarrier() {
     return this->Carrier;
 }
 
-string FlightInformations::getFlightNumber() {
+string Flight::getFlightNumber() {
     return this->FlightNumber;
 }
 
-string FlightInformations::getDestination() {
+string Flight::getDestination() {
     return this->Destination;
 }
 
-string FlightInformations::getRemarks() {
+string Flight::getRemarks() {
     return this->Remarks;
 }
