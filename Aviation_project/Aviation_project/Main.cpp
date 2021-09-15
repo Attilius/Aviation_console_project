@@ -1,7 +1,7 @@
 #include <iostream>
-#include "FlightInformations.h"
+#include "Flight.h"
 #include "Time.h"
-#include "Menu.h"
+#include "View.h"
 
 using std::string;
 using std::cin;
@@ -16,7 +16,7 @@ int main()
 	do
 	{
 		system("cls");
-		setLocation();
+		//setLocation();
 		cin >> selected;
 
 		switch (selected)
