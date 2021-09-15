@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 #include "Error.h"
 #include "View.h"
 
@@ -71,3 +72,24 @@ void Location::View::showLocation(string location)
 	cout << "Press any key to continue!" << endl;
 }
 
+void Location::View::setLocation()
+{
+	array<string, 5> cities_array{ "Budapest", "London", "Paris", "Munich", "New_York" };
+
+	cout << " __________________________________________________________________________" << endl;
+	cout << "|									   |" << endl;
+	cout << "|   db       .d88b.   .o88b.  .d8b.  d888888b d888888b  .d88b.  d8b   db   | " << endl;
+	cout << "|   88      .8P  Y8. d8P  Y8 d8' `8b `~~88~~'   `88'   .8P  Y8. 888o  88   | " << endl;
+	cout << "|   88      88    88 8P      88ooo88    88       88    88    88 88V8o 88   | " << endl;
+	cout << "|   88      88    88 8b      88~~~88    88       88    88    88 88 V8o88   | " << endl;
+	cout << "|   Y88888P  `Y88P'   `Y88P' YP   YP    YP    Y888888P  `Y88P'  VP   V8P   | " << endl;
+	cout << "|__________________________________________________________________________| " << endl;
+	cout << " " << endl;
+	cout << "Please select location from this list below:" << endl;
+	cout << " " << endl;
+
+	for (size_t i = 0; i < cities_array.size(); i++) cout << "=> " << i + 1 << ". " << cities_array[i] << endl;
+
+	cout << " " << endl;
+	cout << "Selected: ";
+}
