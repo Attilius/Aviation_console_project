@@ -93,3 +93,35 @@ void Location::View::setLocation()
 	cout << " " << endl;
 	cout << "Selected: ";
 }
+
+void Menu::View::setMenu()
+{
+	array<string, 7> menuItem_array
+	{
+		"Add new flight",
+		"Update flight",
+		"Display all arrival flight",
+		"Display all departing flight",
+		"Delete flight",
+		"Back to location",
+		"Quit"
+	};
+
+	cout << " __________________________________________" << endl;
+	cout << "|				           |" << endl;
+	cout << "|   .88b  d88. d88888b d8b   db db    db   | " << endl;
+	cout << "|   88'YbdP`88 88'     888o  88 88    88   | " << endl;
+	cout << "|   88  88  88 88ooooo 88V8o 88 88    88   | " << endl;
+	cout << "|   88  88  88 88~~~~~ 88 V8o88 88    88   | " << endl;
+	cout << "|   88  88  88 88.     88  V888 88b  d88   | " << endl;
+	cout << "|   YP  YP  YP Y88888P VP   V8P ~Y8888P'   | " << endl;
+	cout << "|__________________________________________| " << endl;
+	cout << " " << endl;
+	cout << "Please select from this menu items below:" << endl;
+	cout << " " << endl;
+
+	for (size_t i = 0; i < menuItem_array.size(); i++) cout << "=> " << i + 1 << ". " << menuItem_array[i] << endl;
+
+	cout << " " << endl;
+	cout << "Selected: ";
+}
