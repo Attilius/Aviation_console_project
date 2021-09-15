@@ -33,5 +33,6 @@ namespace Location
 	{
 	public:
 		void showLocation(string location);
+		void setLocation();
 	};
 }
