@@ -36,3 +36,11 @@ namespace Location
 		void setLocation();
 	};
 }
+namespace Menu
+{
+	class View
+	{
+	public:
+		void setMenu();
+	};
+}
