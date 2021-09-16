@@ -58,14 +58,7 @@ void confirmation::View::confirmationMessage(string confirmationMsg)
 
 void location::View::showLocation(string location)
 {
-	cout << " __________________________________________________________________________" << endl;
-	cout << "|									   |" << endl;
-	cout << "|   db       .d88b.   .o88b.  .d8b.  d888888b d888888b  .d88b.  d8b   db   | " << endl;
-	cout << "|   88      .8P  Y8. d8P  Y8 d8' `8b `~~88~~'   `88'   .8P  Y8. 888o  88   | " << endl;
-	cout << "|   88      88    88 8P      88ooo88    88       88    88    88 88V8o 88   | " << endl;
-	cout << "|   88      88    88 8b      88~~~88    88       88    88    88 88 V8o88   | " << endl;
-	cout << "|   Y88888P  `Y88P'   `Y88P' YP   YP    YP    Y888888P  `Y88P'  VP   V8P   | " << endl;
-	cout << "|__________________________________________________________________________| " << endl;
+	cout << "___________________________________________________________________________" << endl;
 	cout << " " << endl;
 	cout << location << endl;
 	cout << "___________________________________________________________________________" << endl;
@@ -94,7 +87,7 @@ void location::View::setLocation()
 	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << cities[i] << endl;
 
 	cout << " " << endl;
-	cout << "Selected (1-" << size << ": ";
+	cout << "Selected (1-" << size << "): ";
 }
 
 void menu::View::setMenu()
@@ -119,5 +112,5 @@ void menu::View::setMenu()
 	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << menuItems[i] << endl;
 
 	cout << " " << endl;
-	cout << "Selected (1-" << size << ": ";
+	cout << "Selected (1-" << size << "): ";
 }
