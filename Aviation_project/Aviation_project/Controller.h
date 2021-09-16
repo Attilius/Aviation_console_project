@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Local
+namespace local
 {
 	class Controller
 	{
@@ -9,7 +9,7 @@ namespace Local
 	};
 }
 
-namespace Main
+namespace main
 {
 	class Controller
 	{
