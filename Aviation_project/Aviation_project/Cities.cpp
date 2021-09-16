@@ -1,26 +1,26 @@
 #include "Cities.h"
 
 namespace Budapest {
-	vector <FlightInformations> flightArrivals;
-	vector <FlightInformations> flightDepartures;
+	vector <Flight> flightArrivals;
+	vector <Flight> flightDepartures;
 }
 
 namespace London {
-	vector <FlightInformations> flightArrivals;
-	vector <FlightInformations> flightDepartures;
+	vector <Flight> flightArrivals;
+	vector <Flight> flightDepartures;
 }
 
 namespace Paris {
-	vector <FlightInformations> flightArrivals;
-	vector <FlightInformations> flightDepartures;
+	vector <Flight> flightArrivals;
+	vector <Flight> flightDepartures;
 }
 
 namespace Munich {
-	vector <FlightInformations> flightArrivals;
-	vector <FlightInformations> flightDepartures;
+	vector <Flight> flightArrivals;
+	vector <Flight> flightDepartures;
 }
 
 namespace New_York {
-	vector <FlightInformations> flightArrivals;
-	vector <FlightInformations> flightDepartures;
+	vector <Flight> flightArrivals;
+	vector <Flight> flightDepartures;
 }
