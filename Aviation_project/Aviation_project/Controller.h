@@ -9,7 +9,7 @@ namespace local
 	};
 }
 
-namespace main
+namespace main_
 {
 	class Controller
 	{
