@@ -1,5 +1,5 @@
 #include <iostream>
-#include <array>
+#include "Locations.h"
 #include "Error.h"
 #include "View.h"
 
@@ -74,7 +74,9 @@ void Location::View::showLocation(string location)
 
 void Location::View::setLocation()
 {
-	array<string, 5> cities_array{ "Budapest", "London", "Paris", "Munich", "New_York" };
+	Locations lc;
+	string* cities = lc.getCities();
+	int size = lc.getNumberOfLocations();
 
 	cout << " __________________________________________________________________________" << endl;
 	cout << "|									   |" << endl;
@@ -88,7 +90,7 @@ void Location::View::setLocation()
 	cout << "Please select location from this list below:" << endl;
 	cout << " " << endl;
 
-	for (size_t i = 0; i < cities_array.size(); i++) cout << "=> " << i + 1 << ". " << cities_array[i] << endl;
+	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << cities[i] << endl;
 
 	cout << " " << endl;
 	cout << "Selected: ";
