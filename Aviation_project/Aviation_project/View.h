@@ -36,7 +36,7 @@ namespace Location
 		void setLocation();
 	};
 }
-namespace Menu
+namespace menu
 {
 	class View
 	{
