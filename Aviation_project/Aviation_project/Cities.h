@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "FlightInformations.h"
+#include "Flight.h"
 
 using namespace std;
 
