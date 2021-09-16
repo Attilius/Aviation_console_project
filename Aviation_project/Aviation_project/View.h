@@ -11,7 +11,7 @@ namespace error
 		void showErrorMessage(int errorCode, string errorMessage);
 	};
 }
-namespace Alert
+namespace alert
 {
 	class View
 	{
@@ -19,7 +19,7 @@ namespace Alert
 		void showAlertMessage(string alertMessage);
 	};
 }
-namespace Confirmation
+namespace confirmation
 {
 	class View
 	{
@@ -27,7 +27,7 @@ namespace Confirmation
 		void confirmationMessage(string confirmationMsg);
 	};
 }
-namespace Location
+namespace location
 {
 	class View
 	{
