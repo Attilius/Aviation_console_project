@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Locations.h"
+#include "Menu.h"
 #include "Error.h"
 #include "View.h"
 
@@ -96,18 +97,11 @@ void Location::View::setLocation()
 	cout << "Selected: ";
 }
 
-void Menu::View::setMenu()
+void menu::View::setMenu()
 {
-	array<string, 7> menuItem_array
-	{
-		"Add new flight",
-		"Update flight",
-		"Display all arrival flight",
-		"Display all departing flight",
-		"Delete flight",
-		"Back to location",
-		"Quit"
-	};
+	Menu menu;
+	string* menuItems = menu.getMenuItems();
+	int size = menu.getNumberOfMenuItems();
 
 	cout << " __________________________________________" << endl;
 	cout << "|				           |" << endl;
@@ -122,7 +116,7 @@ void Menu::View::setMenu()
 	cout << "Please select from this menu items below:" << endl;
 	cout << " " << endl;
 
-	for (size_t i = 0; i < menuItem_array.size(); i++) cout << "=> " << i + 1 << ". " << menuItem_array[i] << endl;
+	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << menuItems[i] << endl;
 
 	cout << " " << endl;
 	cout << "Selected: ";
