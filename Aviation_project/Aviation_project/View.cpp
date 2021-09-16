@@ -22,7 +22,7 @@ void error::View::showErrorMessage(int errorCode, string errorMessage)
 
 }
 
-void Alert::View::showAlertMessage(string alertMessage)
+void alert::View::showAlertMessage(string alertMessage)
 {
 	cout << " ______________________________________________________________________ " << endl;
 	cout << "|					                               |" << endl;
@@ -39,7 +39,7 @@ void Alert::View::showAlertMessage(string alertMessage)
 	cout << "Press any key to continue!" << endl;
 	}
 
-void Confirmation::View::confirmationMessage(string confirmationMsg)
+void confirmation::View::confirmationMessage(string confirmationMsg)
 {
 	cout << " _______________________________________________________________________________________________________________ " << endl;
 	cout << "|													      |" << endl;
@@ -56,7 +56,7 @@ void Confirmation::View::confirmationMessage(string confirmationMsg)
 	cout << "Press any key to continue!" << endl;
 }
 
-void Location::View::showLocation(string location)
+void location::View::showLocation(string location)
 {
 	cout << " __________________________________________________________________________" << endl;
 	cout << "|									   |" << endl;
@@ -73,7 +73,7 @@ void Location::View::showLocation(string location)
 	cout << "Press any key to continue!" << endl;
 }
 
-void Location::View::setLocation()
+void location::View::setLocation()
 {
 	Locations lc;
 	string* cities = lc.getCities();
@@ -94,7 +94,7 @@ void Location::View::setLocation()
 	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << cities[i] << endl;
 
 	cout << " " << endl;
-	cout << "Selected: ";
+	cout << "Selected (1-" << size << ": ";
 }
 
 void menu::View::setMenu()
@@ -119,5 +119,5 @@ void menu::View::setMenu()
 	for (size_t i = 0; i < size; i++) cout << "=> " << i + 1 << ". " << menuItems[i] << endl;
 
 	cout << " " << endl;
-	cout << "Selected: ";
+	cout << "Selected (1-" << size << ": ";
 }
