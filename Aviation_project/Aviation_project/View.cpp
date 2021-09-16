@@ -63,7 +63,6 @@ void location::View::showLocation(string location)
 	cout << location << endl;
 	cout << "___________________________________________________________________________" << endl;
 	cout << " " << endl;
-	cout << "Press any key to continue!" << endl;
 }
 
 void location::View::setLocation()
