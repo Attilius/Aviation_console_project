@@ -19,12 +19,12 @@ void local::Controller::LocalMenuController()
 		system("cls");
 		loc.setLocation();
 		cin >> localSelected;
-		system("cls");
-		loc.showLocation(lc.getCities()[localSelected - 1]);
-		menuController.MainMenuContoller();
 		
 	} while (localSelected < 1 || localSelected > sizeOfLocal);
 
+		system("cls");
+		loc.showLocation(lc.getCities()[localSelected - 1]);
+		menuController.MainMenuContoller();
 }
 
 void main_::Controller::MainMenuContoller()
@@ -39,7 +39,45 @@ void main_::Controller::MainMenuContoller()
 	{
 		menu.setMenu();
 		cin >> menuSelected;
-		if (menuSelected == 7) EXIT_SUCCESS;
-
-	} while (menuSelected < 1 || menuSelected > sizeOfMenu);
+		
+		switch (menuSelected)
+		{
+			case 1:
+				system("cls");
+				cout << "Add new flight" << endl;
+				system("pause");
+				break;
+			case 2:
+				system("cls");
+				cout << "Update flight" << endl;
+				system("pause");
+				break;
+			case 3:
+				system("cls");
+				cout << "Display all arrival flight" << endl;
+				system("pause");
+				break;
+			case 4:
+				system("cls");
+				cout << "Display all departing flight" << endl;
+				system("pause");
+				break;
+			case 5:
+				system("cls");
+				cout << "Delete flight" << endl;
+				system("pause");
+				break;
+			case 6:
+				system("cls");
+				cout << "Back to location" << endl;
+				system("pause");
+				break;
+			case 7:
+				break;
+		
+		default:
+			break;
+		}
+		
+	} while (menuSelected != 7);
 }
