@@ -7,7 +7,7 @@
 void local::Controller::LocalMenuController()
 {
 	location::View loc;
-	main::Controller menuController;
+	main_::Controller menuController;
 	Locations lc;
 
 	string* cities = lc.getCities();
@@ -27,7 +27,7 @@ void local::Controller::LocalMenuController()
 
 }
 
-void main::Controller::MainMenuContoller()
+void main_::Controller::MainMenuContoller()
 {
 	menu::View menu;
 	Menu menus;
