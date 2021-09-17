@@ -6,7 +6,7 @@ using namespace std;
 
 int Verification::menuSelectedInput()
 {
-    const regex pattern("[a-zA-Z<>#§&@{}:;,?+!%/=()-_*$ß€đĐ]*");
+    const regex pattern("[a-zA-Z<>#&@{}:;,?+!%/=()-_*$ß€đĐ]*");
     string selected;
     cin >> selected;
 
