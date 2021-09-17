@@ -25,7 +25,6 @@ void local::Controller::LocalMenuController()
 	{
 		system("cls");
 		loc.setLocation();
-		//cin >> localSelected;
 		localSelected = verification.menuSelectedInput();
 		variables::localSelected = localSelected;
 
@@ -54,7 +53,6 @@ void main_::Controller::MainMenuContoller()
 		system("cls");
 		loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 		menu.setMenu();
-		//cin >> menuSelected;
 		menuSelected = verification.menuSelectedInput();
 		
 		switch (menuSelected)
