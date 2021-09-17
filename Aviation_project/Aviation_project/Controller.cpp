@@ -35,6 +35,7 @@ void local::Controller::LocalMenuController()
 
 void main_::Controller::MainMenuContoller()
 {
+	local::Controller local;
 	location::View loc;
 	menu::View menu;
 	Locations lc;
@@ -85,8 +86,7 @@ void main_::Controller::MainMenuContoller()
 				break;
 			case 6:
 				system("cls");
-				cout << "Back to location" << endl;
-				system("pause");
+				local.LocalMenuController();
 				break;
 			case 7:
 				break;
