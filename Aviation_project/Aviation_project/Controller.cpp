@@ -87,6 +87,7 @@ void main_::Controller::MainMenuContoller()
 			case 6:
 				system("cls");
 				local.LocalMenuController();
+				menuSelected = 7;
 				break;
 			case 7:
 				break;
