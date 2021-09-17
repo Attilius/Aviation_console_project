@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Locations.h"
 #include "Controller.h"
+#include "Verification.h"
 #include "View.h"
 #include "Menu.h"
 
@@ -13,6 +14,7 @@ void local::Controller::LocalMenuController()
 {
 	location::View loc;
 	main_::Controller menuController;
+	Verification verification;
 	Locations lc;
 
 	string* cities = lc.getCities();
@@ -23,7 +25,8 @@ void local::Controller::LocalMenuController()
 	{
 		system("cls");
 		loc.setLocation();
-		cin >> localSelected;
+		//cin >> localSelected;
+		localSelected = verification.menuSelectedInput();
 		variables::localSelected = localSelected;
 
 	} while (localSelected < 1 || localSelected > sizeOfLocal);
@@ -35,6 +38,7 @@ void local::Controller::LocalMenuController()
 
 void main_::Controller::MainMenuContoller()
 {
+	Verification verification;
 	local::Controller local;
 	location::View loc;
 	menu::View menu;
@@ -50,7 +54,8 @@ void main_::Controller::MainMenuContoller()
 		system("cls");
 		loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 		menu.setMenu();
-		cin >> menuSelected;
+		//cin >> menuSelected;
+		menuSelected = verification.menuSelectedInput();
 		
 		switch (menuSelected)
 		{
