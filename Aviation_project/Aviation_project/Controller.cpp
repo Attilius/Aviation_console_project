@@ -6,7 +6,7 @@
 
 namespace variables
 {
-	int localselected;
+	int localSelected;
 }
 
 void local::Controller::LocalMenuController()
@@ -24,7 +24,7 @@ void local::Controller::LocalMenuController()
 		system("cls");
 		loc.setLocation();
 		cin >> localSelected;
-		variables::localselected = localSelected;
+		variables::localSelected = localSelected;
 
 	} while (localSelected < 1 || localSelected > sizeOfLocal);
 
@@ -48,7 +48,7 @@ void main_::Controller::MainMenuContoller()
 	do
 	{
 		system("cls");
-		loc.showLocation(lc.getCities()[variables::localselected - 1]);
+		loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 		menu.setMenu();
 		cin >> menuSelected;
 		
@@ -56,31 +56,31 @@ void main_::Controller::MainMenuContoller()
 		{
 			case 1:
 				system("cls");
-				loc.showLocation(lc.getCities()[variables::localselected - 1]);
+				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 				cout << "Add new flight" << endl;
 				system("pause");
 				break;
 			case 2:
 				system("cls");
-				loc.showLocation(lc.getCities()[variables::localselected - 1]);
+				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 				cout << "Update flight" << endl;
 				system("pause");
 				break;
 			case 3:
 				system("cls");
-				loc.showLocation(lc.getCities()[variables::localselected - 1]);
+				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 				cout << "Display all arrival flight" << endl;
 				system("pause");
 				break;
 			case 4:
 				system("cls");
-				loc.showLocation(lc.getCities()[variables::localselected - 1]);
+				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 				cout << "Display all departing flight" << endl;
 				system("pause");
 				break;
 			case 5:
 				system("cls");
-				loc.showLocation(lc.getCities()[variables::localselected - 1]);
+				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
 				cout << "Delete flight" << endl;
 				system("pause");
 				break;
