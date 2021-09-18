@@ -1,5 +1,10 @@
 #pragma once
 
+namespace variables
+{
+	int localSelected;
+}
+
 namespace local
 {
 	class Controller
