@@ -4,7 +4,12 @@
 #include "Verification.h"
 #include "View.h"
 #include "Menu.h"
+#include "Model.h"
 
+namespace variables
+{
+	int localSelected;
+}
 
 void local::Controller::LocalMenuController()
 {
@@ -38,6 +43,7 @@ void main_::Controller::MainMenuContoller()
 	location::View loc;
 	menu::View menu;
 	Locations lc;
+	Model model;
 	Menu menus;
 
 	string* cities = lc.getCities();
@@ -56,8 +62,8 @@ void main_::Controller::MainMenuContoller()
 			case 1:
 				system("cls");
 				loc.showLocation(lc.getCities()[variables::localSelected - 1]);
-				cout << "Add new flight" << endl;
-				system("pause");
+				model.createData();
+				menuSelected = 7;
 				break;
 			case 2:
 				system("cls");
