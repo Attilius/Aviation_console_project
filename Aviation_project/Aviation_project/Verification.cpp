@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 #include <regex>
 #include "Verification.h"
 
@@ -6,7 +7,7 @@ using namespace std;
 
 int Verification::menuSelectedInput()
 {
-    const regex pattern("[a-zA-Z<>#&@{}:;,?+!%/=()-_*$ß€đĐ]*");
+    const regex pattern("[a-zA-Z]*");
     string selected;
     cin >> selected;
 
