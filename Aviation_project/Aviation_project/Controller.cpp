@@ -5,10 +5,6 @@
 #include "View.h"
 #include "Menu.h"
 
-namespace variables
-{
-	int localSelected;
-}
 
 void local::Controller::LocalMenuController()
 {
